@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" initialViewController="rSK-qx-umE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="I0o-3k-K7h">
+            <objects>
+                <viewController id="rSK-qx-umE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P48-dL-jrZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="oSn-GO-esf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="445-E5-3h2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zing-mp3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9YY-Ey-IUT">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZING MP3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVd-cP-rcS">
+                                <rect key="frame" x="16" y="0.0" width="296" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="0rJ-my-jZG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <color key="textColor" red="0.97254901959999995" green="0.2156862745" blue="0.72859689599999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="sVd-cP-rcS" firstAttribute="leading" secondItem="445-E5-3h2" secondAttribute="leadingMargin" id="NhH-7H-zBZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sVd-cP-rcS" secondAttribute="trailing" constant="-8" id="Vhf-V4-OcF"/>
+                            <constraint firstItem="9YY-Ey-IUT" firstAttribute="leading" secondItem="445-E5-3h2" secondAttribute="leadingMargin" constant="-20" id="hKC-Sr-RSX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9YY-Ey-IUT" secondAttribute="trailing" constant="-20" id="nri-mn-0jc"/>
+                            <constraint firstItem="9YY-Ey-IUT" firstAttribute="top" secondItem="P48-dL-jrZ" secondAttribute="bottom" id="rPO-tD-klf"/>
+                            <constraint firstItem="oSn-GO-esf" firstAttribute="top" secondItem="9YY-Ey-IUT" secondAttribute="bottom" id="uV2-L8-zn0"/>
+                            <constraint firstItem="sVd-cP-rcS" firstAttribute="top" secondItem="P48-dL-jrZ" secondAttribute="bottom" id="vLE-px-AE9"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="logo" destination="9YY-Ey-IUT" id="ucd-ex-OtA"/>
+                        <outlet property="text" destination="sVd-cP-rcS" id="ObT-xy-2Ao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gp2-tx-xwM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.799999999999997" y="368.25333333333333"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="zing-mp3.jpg" width="1024" height="1024"/>
+    </resources>
+</document>
